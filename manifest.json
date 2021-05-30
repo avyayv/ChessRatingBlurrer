@@ -1,0 +1,17 @@
+{
+  "name": "Chess.com Rating Blurrer",
+  "description": "Blurring Chess.com Ratings",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+      "storage", 
+      "activeTab", 
+      "scripting"],
+  "host_permissions": ["https://www.chess.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
